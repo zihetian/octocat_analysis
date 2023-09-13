@@ -1,5 +1,5 @@
 octocat <- readLines("octocat.txt")
 
-gsub(" ", replacement = "", octocat) |>
+gsub("^[ ]*|[ ]*$", replacement = "", octocat) |>
   nchar() |>
   sum()
